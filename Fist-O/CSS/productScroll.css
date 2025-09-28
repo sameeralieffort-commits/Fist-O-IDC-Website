@@ -1,0 +1,66 @@
+.scroll-container {
+  height: 00vh; /* Enough to scroll 4 vertical viewports */
+  background: #000;
+  overflow-x: hidden;
+  overflow-y: hidden; /* Prevent horizontal scrollbar */
+}
+
+.horizontal-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  /* width will be set dynamically via JS */
+}
+
+.panel {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.black {
+  background: rgb(0, 0, 0);
+  justify-content: flex-start;
+  font-size: 5rem;
+  width: 90vw; /* Adjusted width for text panel */
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.orange {
+  background: orange;
+}
+
+/* No need to override widths for larger screens in media queries */
+
+
+@media screen and (max-width: 768px) {
+  .horizontal-container {
+    flex-direction: column; /* stack panels vertically */
+    width: 100vw;           /* full width, no horizontal scrolling */
+    height: auto;           /* let height be defined by panels */
+  }
+
+  .scroll-container {
+    height: auto;  /* let JS handle scroll height */
+    overflow-y: visible; 
+  }
+}
+
