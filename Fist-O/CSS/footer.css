@@ -24,10 +24,12 @@
         .footer-column ul {
             list-style: none;
             text-align: center;
+            padding: 0;
         }
 
         .footer-column li {
             margin-bottom: 16px;
+            list-style: none;
         }
 
         .footer-column a {

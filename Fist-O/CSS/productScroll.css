@@ -1,22 +1,23 @@
 .scroll-container {
-  height: 00vh; /* Enough to scroll 4 vertical viewports */
   background: #000;
   overflow-x: hidden;
-  overflow-y: hidden; /* Prevent horizontal scrollbar */
+  overflow-y: hidden;
 }
 
 .horizontal-wrapper {
-  position: sticky;
-  top: 0;
+  position: relative;
   height: 100vh;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .horizontal-container {
+  position: relative;
   display: flex;
   flex-direction: row;
   height: 100vh;
-  /* width will be set dynamically via JS */
+  z-index: 10;
+  padding-left: 209vh;
+  will-change: transform;
 }
 
 .panel {
@@ -29,11 +30,21 @@
   color: white;
 }
 
-.black {
-  background: rgb(0, 0, 0);
+/* First panel fixed for desktop/tablet */
+.panel.black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  display: flex;
+  align-items: center;
   justify-content: flex-start;
-  font-size: 5rem;
-  width: 90vw; /* Adjusted width for text panel */
+  padding: 4rem;
+  box-sizing: border-box;
+  font-size: 4rem;
+  background: #000;
 }
 
 .green {
@@ -48,19 +59,78 @@
   background: orange;
 }
 
-/* No need to override widths for larger screens in media queries */
 
-
-@media screen and (max-width: 768px) {
-  .horizontal-container {
-    flex-direction: column; /* stack panels vertically */
-    width: 100vw;           /* full width, no horizontal scrolling */
-    height: auto;           /* let height be defined by panels */
+@media screen and (max-width: 1024px) {
+  .horizontal-wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: visible;
   }
 
-  .scroll-container {
-    height: auto;  /* let JS handle scroll height */
-    overflow-y: visible; 
+  .horizontal-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 120vh;
+    z-index: 10;
+    padding-left: 86vh;
+    will-change: transform;
   }
 }
 
+/* --- Mobile fallback --- */
+@media screen and (max-width: 768px) {
+  /* .scroll-container {
+    height: 0;
+    overflow-y: visible;
+  } */
+
+  .horizontal-container {
+    flex-direction: column;
+    width: 100vh;
+    padding-left: 0;
+  }
+
+  .panel.black {
+    position: relative;
+    font-size: 3rem;
+  }
+
+  .panel {
+    height: 100vh;
+  }
+
+  .scroll-img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* .scroll-container {
+    height: 0;
+    overflow-y: visible;
+  } */
+
+  .horizontal-container {
+    flex-direction: column;
+    width: 100vh;
+    padding-left: 0;
+    padding-top: 50px;
+  }
+
+  .panel.black {
+    position: relative;
+    font-size: 3rem;
+  }
+
+  .panel {
+    height: 100vh;
+  }
+
+  .scroll-img {
+    width: 70%;
+    height: auto;
+  }
+}

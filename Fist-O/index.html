@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./CSS/productScroll.css" />
     <link rel="stylesheet" href="./CSS/agency.css" />
     <link rel="stylesheet" href="./CSS/videoGrid.css" />
+    <link rel="stylesheet" href="./CSS/pappers.css" />
     <link rel="stylesheet" href="./CSS/footer.css" />
 
     <link
@@ -92,20 +93,20 @@
     <!-- ************************************************** GSAP HORIZONTAL SLIDER START************************************************* -->
     <div class="scroll-container">
       <div class="horizontal-wrapper">
+        <section class="panel black">
+          Your Creative <br />
+          Process is changing <br />
+          take break and control
+        </section>
         <div class="horizontal-container">
-          <section class="panel black">
-            Your Creative <br />
-            Process is changing <br />
-            take break and control
-          </section>
           <section class="panel green">
-            <img src="./assets/Fisto logo.png" alt="" />
+            <img src="./assets/Fisto logo.png" alt="" class="scroll-img"/>
           </section>
           <section class="panel blue">
-            <img src="./assets/Fisto logo.png" alt="" />
+            <img src="./assets/Fisto logo.png" alt="" class="scroll-img" />
           </section>
           <section class="panel orange">
-            <img src="./assets/Fisto logo.png" alt="" />
+            <img src="./assets/Fisto logo.png" alt="" class="scroll-img"/>
           </section>
         </div>
       </div>
@@ -284,49 +285,223 @@
       </div>
     </div>
 
-    <!-- ************************************************** VIDEO FLEX START ************************************************* -->
+    <!-- ************************************************** VIDEO FLEX END ************************************************* -->
 
-    <!-- ************************************************** FOOTER START ************************************************* -->
- <footer class="footer">
-        <div class="footer-top">
-            <div class="footer-column">
-                <h3>Company</h3>
-                <ul>
-                    <li><a href="#">Mission</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Enterprise</a></li>
-                </ul>
-            </div>
+    <!-- ************************************************** PAPPERS START ************************************************* -->
+    <section id="testimonials" class="pappers-content">
+      <!-- Heading -->
+      <!-- <div class="-pappers-heading">
+        <p class="main-text">The tool creatives actually want to use...</p>
+        <div class="scrabble">
+          <img
+            src="https://framerusercontent.com/images/gh3QqKf2i2bpK59z4QKGut6zt0k.png"
+            alt="Scrabble"
+          />
+        </div>
+      </div> -->
 
-            <div class="footer-column">
-                <h3>Product</h3>
-                <ul>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Learn</a></li>
-                    <li><a href="#">What's New</a></li>
-                </ul>
+      <!-- Testimonials Wrapper -->
+      <div class="testimonials-pappers">
+        <!-- Single green Testimonial -->
+        <div class="testimonial-green-papper">
+          <div class="image-wrapper">
+            <!-- <img
+              src="./assets/green-papper.avif"
+              alt="Shadow"
+              class="shadow"
+            /> -->
+            <img src="./assets/green-papper.avif" alt="Main" class="main-img" id="green-papper-img"  />
+          </div>
+          <div class="green-text">
+            <p class="green-quote">
+              “Visual Electric has ignited a new wave of creativity across our
+              team. It's not just enhancing our process, it's transforming how
+              we build the future of our brand.”
+            </p>
+            <div class="green-author">
+              <img
+                src="https://framerusercontent.com/images/fXu6Iiq13ogmvYEROC2bt4HRs.png"
+                alt="Author"
+                class="author-img"
+              />
+              <div class="green-author-info">
+                <p class="name">Elle abarca</p>
+                <p class="role">Creative Director, Maven Clinic</p>
+              </div>
             </div>
-
-            <div class="footer-column">
-                <h3>Plugins</h3>
-                <ul>
-                    <li><a href="#">Framer</a></li>
-                    <li><a href="#">Webflow</a></li>
-                    <li><a href="#">Figma</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Legal</h3>
-                <ul>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Copyright</a></li>
-                </ul>
-            </div>
+          </div>
         </div>
 
-        <!-- <div class="social-links">
+        <!-- Single pink Testimonial -->
+        <div class="testimonial-pink-papper">
+          <div class="image-wrapper">
+            <!-- <img
+              src="./assets/green-papper.avif"
+              alt="Shadow"
+              class="shadow"
+            /> -->
+            <img src="./assets/pink-papper.avif" alt="Main" class="main-img" id="pink-papper-img" />
+          </div>
+          <div class="pink-text">
+            <p class="pink-quote">
+              “Visual Electric has ignited a new wave of creativity across our
+              team. It's not just enhancing our process, it's transforming how
+              we build the future of our brand.”
+            </p>
+            <div class="pink-author">
+              <img
+                src="https://framerusercontent.com/images/fXu6Iiq13ogmvYEROC2bt4HRs.png"
+                alt="Author"
+                class="author-img"
+              />
+              <div class="pink-author-info">
+                <p class="name">Elle abarca</p>
+                <p class="role">Creative Director, Maven Clinic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single greenbox Testimonial -->
+        <div class="testimonial-greenbox-papper">
+          <div class="image-wrapper">
+            <!-- <img
+              src="./assets/green-papper.avif"
+              alt="Shadow"
+              class="shadow"
+            /> -->
+            <img src="./assets/greenbox.avif" alt="Main" class="main-img" />
+          </div>
+          <div class="greenbox-text">
+            <p class="greenbox-quote">
+              “Visual Electric has ignited a new wave of creativity across our
+              team. It's not just enhancing our process, it's transforming how
+              we build the future of our brand.”
+            </p>
+            <div class="greenbox-author">
+              <img
+                src="https://framerusercontent.com/images/fXu6Iiq13ogmvYEROC2bt4HRs.png"
+                alt="Author"
+                class="author-img"
+              />
+              <div class="greenbox-author-info">
+                <p class="name">Elle abarca</p>
+                <p class="role">Creative Director, Maven Clinic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-purple-papper">
+          <div class="image-wrapper">
+            <!-- <img
+              src="./assets/green-papper.avif"
+              alt="Shadow"
+              class="shadow"
+            /> -->
+            <img
+              src="./assets/purple-papper.avif"
+              alt="Main"
+              class="main-img" id="purple-papper-img"
+            />
+          </div>
+          <div class="purple-text">
+            <p class="purple-quote">
+              “Visual Electric has ignited a new wave of creativity across our
+              team. It's not just enhancing our process, it's transforming how
+              we build the future of our brand.”
+            </p>
+            <div class="purple-author">
+              <img
+                src="https://framerusercontent.com/images/fXu6Iiq13ogmvYEROC2bt4HRs.png"
+                alt="Author"
+                class="author-img" 
+              />
+              <div class="purple-author-info">
+                <p class="name">Elle abarca</p>
+                <p class="role">Creative Director, Maven Clinic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-yellow-papper">
+          <div class="image-wrapper">
+            <!-- <img
+              src="./assets/green-papper.avif"
+              alt="Shadow"
+              class="shadow"
+            /> -->
+            <img
+              src="./assets/yellow-papper.avif"
+              alt="Main"
+              class="main-img" id="yellow-papper-img"
+            />
+          </div>
+          <div class="yellow-text">
+            <p class="yellow-quote">
+              “Visual Electric has ignited a new wave of creativity across our
+              team. It's not just enhancing our process, it's transforming how
+              we build the future of our brand.”
+            </p>
+            <div class="yellow-author">
+              <img
+                src="https://framerusercontent.com/images/fXu6Iiq13ogmvYEROC2bt4HRs.png"
+                alt="Author"
+                class="author-img"
+              />
+              <div class="yellow-author-info">
+                <p class="name">Elle abarca</p>
+                <p class="role">Creative Director, Maven Clinic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************************************************** PAPPERS END ************************************************* -->
+
+    <!-- ************************************************** FOOTER START ************************************************* -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Enterprise</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">What's New</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Plugins</h3>
+          <ul>
+            <li><a href="#">Framer</a></li>
+            <li><a href="#">Webflow</a></li>
+            <li><a href="#">Figma</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Copyright</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <div class="social-links">
             <!-- X (Twitter) Icon 
             <a href="#" aria-label="X">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -363,13 +538,17 @@
             </a>
         </div> -->
 
-        <div class="logo-section-footer">
-            <div class="logo-icon-footer">
-              <img src="./assets/Fisto logo - white.png" alt="" class="logo-icon-footer">
-            </div>
-            <!-- <div class="logo-text">FIST-O IDC WEBSITE</div> -->
+      <div class="logo-section-footer">
+        <div class="logo-icon-footer">
+          <img
+            src="./assets/Fisto logo - white.png"
+            alt=""
+            class="logo-icon-footer"
+          />
         </div>
-      </footer>
+        <!-- <div class="logo-text">FIST-O IDC WEBSITE</div> -->
+      </div>
+    </footer>
 
     <!-- ************************************************** FOOTER END ************************************************* -->
 

@@ -70,7 +70,7 @@ window.addEventListener('load', () => {
         scrub: true,
         pin: ".horizontal-wrapper",
         pinSpacing: true,
-        snap: 1 / (panels.length - 1),
+        snap: 1 / (panels.length - 1.5),
         markers: true
       }
     });
@@ -90,11 +90,11 @@ window.addEventListener('load', () => {
       scrollTrigger: {
         trigger: ".scroll-container",
         start: "top top",
-        end: "+=" + ((panels.length - 1) * window.innerHeight),
+        end: "+=" + ((panels.length - 2)  * getViewportWidth() + window.innerHeight * 1.91),
         scrub: true,
         pin: ".horizontal-wrapper",
         pinSpacing: true,
-        snap: 1 / (panels.length - 1),
+        snap: 1 / (panels.length - 0.8),
         markers: true
       }
     });

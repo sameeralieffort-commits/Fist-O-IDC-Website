@@ -1,22 +1,21 @@
 .agency-grid {
   display: flex;
-  gap: 32px;
   padding: 48px 16px;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: flex-start;
   background: #fff;
   flex-wrap: wrap;
 }
 
 .agency-card {
-  width: 330px;
+  width: 280px;
   background: #fff;
-  border-radius: 18px;
+  border-radius: 10px;
   box-shadow: 0 1.5px 10px rgba(0, 0, 0, 0.314);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  min-height: 350px;
+  min-height: 400px;
   margin-bottom: 20px;
 }
 
@@ -37,7 +36,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 20px 24px 0 24px;
+  padding: 20px 24px 15px 24px;
 }
 
 .agency-logo {
@@ -82,7 +81,7 @@
   color: #252525;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 18px;
   font-weight: 400;
 }
 .agency-info strong {
